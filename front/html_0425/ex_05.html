@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS 단위 - 미디어 쿼리</title>
+  <style>
+    body {
+      background-color: aliceblue;
+      font-size: 16px;
+      color: black;
+    }
+
+    @media (max-width:768px) {
+      /* 768 px 이하 */
+      body {
+        background-color: yellowgreen;
+      }
+    }
+
+    @media (min-width:769px) {
+      body {
+        background-color: aquamarine;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>뷰포트 단위 예시</h1>
+  <p>CSS에서 뷰포트 단위를 사용하여 반응형 레이아웃을 만드는 예입니다.</p>
+</body>
+</html>

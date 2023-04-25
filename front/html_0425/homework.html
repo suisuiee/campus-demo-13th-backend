@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    .intro {
+      color:red;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+
+    
+    .intro + p {
+      color: crimson;
+      font-style: italic;
+    }
+
+    ul ~ p {
+      font-style: italic;
+    }
+
+    .title {
+      background-color: gainsboro;
+    }
+
+    .container .box{
+      color: gray;
+      font-style: italic;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <h1>CSS Selector Example</h1>
+    <p class="intro">Lorem Ipsum</p>
+    <p>이 요소는 단락 요소입니다. 글자 색 이름은 \crimson\ 입니다. font style 은 이탤릭입니다.</p>
+    <p>이 요소는 단락 요소입니다. 1</p>
+    <p>이 요소는 단락 요소입니다. 2</p>
+    <p>이 요소는 단락 요소입니다. 3</p>
+    <ul>
+      <li>unordered list 입니다. ul -> li 의 구조를 가집니다. 1</li>
+      <li>unordered list 입니다. ul -> li 의 구조를 가집니다. 2</li>
+      <li>unordered list 입니다. ul -> li 의 구조를 가집니다. 3</li>
+    </ul>
+    <p>이 요소는 단락 요소입니다. 4</p>
+    <p>이 요소는 단락 요소입니다. 5</p>
+    <p>이 요소는 단락 요소입니다. 6</p>
+    <div class="title">Div Container</div>
+    <div class="container">
+      <p class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deleniti quam numquam enim quis cupiditate libero distinctio recusandae velit, accusantium cum commodi repudiandae dicta asperiores omnis ipsum? Obcaecati, molestias maiores.</p>
+      <p class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deleniti quam numquam enim quis cupiditate libero distinctio recusandae velit, accusantium cum commodi repudiandae dicta asperiores omnis ipsum? Obcaecati, molestias maiores.</p>
+      <p class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deleniti quam numquam enim quis cupiditate libero distinctio recusandae velit, accusantium cum commodi repudiandae dicta asperiores omnis ipsum? Obcaecati, molestias maiores.</p>
+    </div>
+    <input type="text" placeholder="Enter text here">  <a href="#">Link example</a>
+  </div>
+</body>
+</html>
